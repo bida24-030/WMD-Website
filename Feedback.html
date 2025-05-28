@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+               
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* style the master page */
+
+/*define page size*/
+.master, .columns{
+    width: 100%;
+    border:1px solid turquoise;
+}
+
+div#divmaincontainer{
+    width: 100%;
+    margin: auto;
+}
+
+#header{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 4px;
+    border-radius: 10px 10px 0 0;
+
+    /* load the banner */
+    background-image: url('Images/Deep\ sea\ underwater\ bubbles.jpg'); /* path has to be relative to css .. go out of css folder once, then find the images folder*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+h1#sitetitle{
+    color: rgb(82, 141, 157);
+    font-size: 50px;
+    font-family: monospace;
+    padding: 20px;
+    text-align: left;
+}
+
+nav#navmenu{
+    height: 40px;
+    margin-bottom: 4px;
+    background-image: radial-gradient( rgb(221, 244, 242), rgb(222, 222, 217), rgb(228, 234, 228));
+
+}
+
+nav#navmenu > ul#ulmenu {
+    list-style-type: circle;
+    margin-top: 5px;
+}
+
+nav#navmenu > ul#ulmenu > li {
+    display: inline-block;
+    font-size: 1.1em;
+    border: 1px solid steelblue;
+    padding: 3px 10px 3px 3px;
+    font-weight: bold;
+}
+
+nav#navmenu > ul#ulmenu > li:hover{
+    background-color: beige;
+    color: blue;
+}
+
+header {
+    background-color: rgb(70, 83, 96);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+  }
+
+
+
+div#divcolcontainer{
+    width: 100%;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3%;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+body {
+                  font-family: sans-serif;
+                  background: aliceblue;
+                  padding: 30px;
+                }
+            
+                .feedback-form {
+                  max-width: 500px;
+                  margin: auto;
+                  background: aliceblue;
+                  padding: 30px;
+                  border-radius: 12px;
+                  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                }
+            
+                .feedback-form h2 {
+                  text-align: center;
+                  margin-bottom: 20px;
+                }
+            
+                label {
+                  display: block;
+                  margin-bottom: 8px;
+                  font-weight: bold;
+                }
+            
+                input[type="text"],
+                input[type="email"],
+                select,
+                textarea {
+                  width: 100%;
+                  padding: 10px;
+                  margin-bottom: 15px;
+                  border-radius: 8px;
+                  border: 1px solid aliceblue;
+                  font-size: 16px;
+                }
+            
+                textarea {
+                  height: 100px;
+                  resize: vertical;
+                }
+
+                button {
+                  background-color: green;
+                  color: white;
+                  border: none;
+                  padding: 12px;
+                  width: 100%;
+                  border-radius: 8px;
+                  font-size: 16px;
+                }
+            
+                button:hover {
+                  background-color: green;
+                }
+
+    </style>
+</head>
+<body>
+
+    <div id="divmaincontainer">
+
+        <header id="header" class="master">
+
+            <h1 id="sitetitle">Bloom Beverages</h1>
+
+        </header>
+
+        <nav id="navmenu" class="master">
+
+            <ul id="ulmenu">
+              <li> <a href="index.html">Home</a> </li>
+              <li> <a href="Menu.html">Menu</a> </li>
+              <li> <a href="Promotion.html">Promotion</a> </li>
+              <li> <a href="AboutUS.html">AboutUS</a> </li>
+              <li> <a href="Feedback.html">Feedback</a> </li>
+              <li> <a href="ContactUs.html">ContactUs</a> </li>
+            </ul>
+            </nav>
+            
+            <header>
+              <h2>Drink Feedback Form</h2>
+            </header>
+                  
+            <div id="divcolcontainer">
+                <aside id="sidebar" class="columns">
+              <div class="feedback-form">
+          
+                <form>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+            
+                  <label for="drink">Which drink did you try?</label>
+                  <select id="drink" name="drink" required>
+                    <option value="">Select a drink</option>
+                    <option value="Fanta">Fanta</option>
+                    <option value="Coca-Cola">Coca-Cola</option>
+                    <option value="Prime">Prime</option>
+                    <option value="Sprite">Sprite</option>
+                    <option value="Pepsi">Pepsi</option>
+                  </select>
+            
+            
+                  <label for="feedback">Your Feedback:</label>
+                  <textarea id="feedback" name="feedback" placeholder="Share your feedback..." required></textarea>
+            
+                  <button type="submit">Submit Feedback</button>
+                </form>
+              </div>
+            
+            </body>
+            </html>
+            
+    </div>
+</body>
+</html>

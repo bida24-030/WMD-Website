@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUS</title>
+    <style>
+        
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* style the master page */
+
+/*define page size*/
+.master, .columns{
+    width: 100%;
+    border:1px solid turquoise;
+}
+
+div#divmaincontainer{
+    width: 100%;
+    margin: auto;
+}
+
+#header{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 4px;
+    border-radius: 10px 10px 0 0;
+
+    /* load the banner */
+    background-image: url('Images/Deep\ sea\ underwater\ bubbles.jpg'); /* path has to be relative to css .. go out of css folder once, then find the images folder*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+h1#sitetitle{
+    color: rgb(82, 141, 157);
+    font-size: 50px;
+    font-family: monospace;
+    padding: 20px;
+    text-align: left;
+}
+
+nav#navmenu{
+    height: 40px;
+    margin-bottom: 4px;
+    background-image: radial-gradient( rgb(221, 244, 242), rgb(222, 222, 217), rgb(228, 234, 228));
+
+}
+
+nav#navmenu > ul#ulmenu {
+    list-style-type: circle;
+    margin-top: 5px;
+}
+
+nav#navmenu > ul#ulmenu > li {
+    display: inline-block;
+    font-size: 1.1em;
+    border: 1px solid steelblue;
+    padding: 3px 10px 3px 3px;
+    font-weight: bold;
+}
+
+nav#navmenu > ul#ulmenu > li:hover{
+    background-color: beige;
+    color: blue;
+}
+
+
+header {
+    background-color: rgb(70, 83, 96);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+  }
+
+
+div#divcolcontainer{
+    width: 100%;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3%;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+
+#pfooter{
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-left: 200px;
+}
+
+#onlineplatforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#onlineplatforms a{
+    margin: 0 10px;
+}
+
+#onlineplatforms img{
+    height: 20px;
+    width: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div id="divmaincontainer">
+
+        <header id="header" class="master">
+
+            <h1 id="sitetitle">Bloom Beverages</h1>
+
+        </header>
+
+        <nav id="navmenu" class="master">
+
+            <ul id="ulmenu">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="Menu.html">Menu</a> </li>
+                <li> <a href="Promotion.html">Promotion</a> </li>
+                <li> <a href="AboutUS.html">AboutUS</a> </li>
+                <li> <a href="Feedback.html">Feedback</a> </li>
+                <li> <a href="ContactUs.html">ContactUs</a> </li>
+            </ul>
+            </nav>
+
+            <header>
+                <h1>About Us</h1>
+              </header>
+                    
+           
+            <div id="divcolcontainer">
+                <aside id="sidebar" class="columns">
+        
+        <p>Bloom beverages create every drink to energize and boost you with every sip.Were dedicated to using the finest fruits ingredients for fizzy,sweet, and smooth refreshing flavours.
+            We believe in natural and goodness, creating exceptional drinks that make you feel great.Quench your thirst with us!
+        </p>
+        <p>Want to see Bloom Beverages in action or join the conversation? Follow us on online platforms below</p>
+
+        <div class="container"> 
+            <p id="pfooter">
+                <footer id="footer" class="master">
+        
+                    <div id="online platforms">
+                        <span id="fb"> <a href="https://facebook.com" target="_blank"> <img src="Online platforms/facebook.jpg"></a> </span>
+                        <span id="yb"> <a href="https://youtube.com" target="_blank"> <img src="Online platforms/youtube.png"></a> </span>
+                        <span id="xx"> <a href="https://chrome.com" target="_blank"> <img src="Online platforms/chrome.jpg"></a> </span>
+                        <span id="wa"> <a href="https://web.whatsapp.com" target="_blank"> <img src="Online platforms/whatsapp.jpg"></a> </span>
+                    </div>
+        
+                </footer>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

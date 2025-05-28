@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <style>
+               
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: aliceblue;
+}
+
+/* style the master page */
+
+/*define page size*/
+.master, .columns{
+    width: 100%;
+    border:1px solid turquoise;
+}
+
+div#divmaincontainer{
+    width: 100%;
+    margin: auto;
+}
+
+#header{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 4px;
+    border-radius: 10px 10px 0 0;
+
+    /* load the banner */
+    background-image: url('Images/Deep\ sea\ underwater\ bubbles.jpg'); /* path has to be relative to css .. go out of css folder once, then find the images folder*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+h1#sitetitle{
+    color: rgb(82, 141, 157);
+    font-size: 50px;
+    font-family: monospace;
+    padding: 20px;
+    text-align: left;
+}
+
+nav#navmenu{
+    height: 40px;
+    margin-bottom: 4px;
+    background-image: radial-gradient( rgb(221, 244, 242), rgb(222, 222, 217), rgb(228, 234, 228));
+
+}
+
+nav#navmenu > ul#ulmenu {
+    list-style-type: circle;
+    margin-top: 5px;
+}
+
+nav#navmenu > ul#ulmenu > li {
+    display: inline-block;
+    font-size: 1.1em;
+    border: 1px solid steelblue;
+    padding: 3px 10px 3px 3px;
+    font-weight: bold;
+}
+
+nav#navmenu > ul#ulmenu > li:hover{
+    background-color: beige;
+    color: blue;
+}
+
+div#divcolcontainer{
+    width: 100%;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3%;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+div#divcolcontainer{
+    width: 100%;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3%;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+body {
+                  margin: 0;
+                  font-family:sans-serif;
+                  background-color: aliceblue;
+                }
+            
+                .container {
+                  max-width: 1100px;
+                  margin: auto;
+                  padding: 40px 20px;
+                }
+            
+                header {
+                  background-color: rgb(94, 107, 118);
+                  color: white;
+                  padding: 20px 0;
+                  text-align: center;
+                }
+            
+                header h1 {
+                  margin: 0;
+                }
+            
+                .contact-section {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 40px;
+                  margin-top: 40px;
+                  background-color: aliceblue;
+                  border-radius: 12px;
+                  padding: 30px;
+                  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+                }
+            
+                .contact-info, .contact-form {
+                  flex: 1 1 300px;
+                }
+            
+                .contact-info h2,
+                .contact-form h2 {
+                  margin-bottom: 15px;
+                }
+            
+                .contact-info p {
+                  margin: 10px 0;
+                  font-size: 16px;
+                }
+            
+                .contact-info p strong {
+                  display: inline-block;
+                  width: 90px;
+                }
+            
+                input, textarea {
+                  width: 100%;
+                  padding: 12px;
+                  margin-bottom: 15px;
+                  border-radius: 8px;
+                  border: 1px gainsboro;
+                  font-size: 16px;
+                }
+            
+                textarea {
+                  height: 120px;
+                  resize: vertical;
+                }
+            
+                button {
+                  background-color: green;
+                  color: white;
+                  border: none;
+                  padding: 12px 20px;
+                  font-size: 16px;
+                  border-radius: 8px;
+                }
+            
+                button:hover {
+                  background-color: green;
+                }
+    </style>
+</head>
+<body>
+    <div id="divmaincontainer">
+
+        <header id="header" class="master">
+
+            <h1 id="sitetitle">Bloom Beverages</h1>
+
+        </header>
+
+        <nav id="navmenu" class="master">
+
+            <ul id="ulmenu">
+              <li> <a href="index.html">Home</a> </li>
+              <li> <a href="Menu.html">Menu</a> </li>
+              <li> <a href="Promotion.html">Promotion</a> </li>
+              <li> <a href="AboutUS.html">AboutUS</a> </li>
+              <li> <a href="Feedback.html">Feedback</a> </li>
+              <li> <a href="ContactUs.html">ContactUs</a> </li>
+           </ul>
+           </nav>
+               
+            
+              <header>
+                <h1>Contact Us</h1>
+              </header>
+
+              <div id="divcolcontainer">
+                <aside id="sidebar" class="columns">
+              <div class="container">
+                <div class="contact-section">
+            
+                  <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p><strong>Email:</strong>@Bloom Beverages.com</p>
+                    <p><strong>Phone:</strong>+267 6867789</p>
+                    <p>You can order your drinks now...It will be delivered right to you</p>
+                  </div>
+            
+                  <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <form>
+                      <input type="text" name="name" placeholder="Your Name" required>
+                      <input type="email" name="email" placeholder="Your Email" required>
+                      <input type="text" name="Order" placeholder="Your Order" required>
+                      <textarea name="message" placeholder="Your Message" required></textarea>
+                      <button type="submit">Send Message</button>
+                    </form>
+                  </div>
+            
+                </div>
+              </div>
+            
+            
+
+</body>
+</html>

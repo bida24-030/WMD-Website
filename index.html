@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Beverages</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+
+    <div id="divmaincontainer">
+
+        <header id="header" class="master">
+
+            <h1 id="sitetitle">Bloom Beverages</h1>
+
+        </header>
+
+        <nav id="navmenu" class="master">
+
+            <ul id="ulmenu">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="Menu.html">Menu</a> </li>
+                <li> <a href="Promotion.html">Promotion</a> </li>
+                <li> <a href="AboutUS.html">AboutUS</a> </li>
+                <li> <a href="Feedback.html">Feedback</a> </li>
+                <li> <a href="ContactUs.html">ContactUs</a> </li>
+            </ul>
+
+        </nav>
+
+  <header>
+    <span id="sitemotto">Quench your thirst</span>
+  </header>
+        
+        <div id="divcolcontainer">
+            <aside id="sidebar" class="columns">
+
+        <div class="text-container">
+        <p>"Step into our Bloom beverages and discover a refreshing world of drinks in every flavour imaginable.QUENCH YOUR THIRST WITH US. WE'VE GOT YOU COVERED!!"</p>
+        <p><a href="Menu.html">View Menu</a></p>
+        <video autoplay muted loop>
+            <source src="videos/cf16d30e2f8a34922cc6c8a0bb056674.mp4">
+        </video>
+
+        </aside>
+        </div>
+        <footer id="footer" class="master">
+
+            <p id="pfooter">
+                Copyright@Bloom Beverages - <span id="currentyear"></span>
+            </p>
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        //console.log("DOM fully loaded and parsed");
+        var cyear = new Date().getFullYear();
+        document.querySelector("#currentyear").innerText = cyear;
+    });
+
+
+</script>
+

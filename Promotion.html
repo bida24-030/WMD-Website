@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion</title>
+    <style>
+                
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* style the master page */
+
+/*define page size*/
+.master, .columns{
+    width: 100%;
+    border:1px solid turquoise;
+}
+
+div#divmaincontainer{
+    width: 100%;
+    margin: auto;
+}
+
+#header{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 4px;
+    border-radius: 10px 10px 0 0;
+
+    /* load the banner */
+    background-image: url('Images/Deep\ sea\ underwater\ bubbles.jpg'); /* path has to be relative to css .. go out of css folder once, then find the images folder*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+h1#sitetitle{
+    color: rgb(82, 141, 157);
+    font-size: 50px;
+    font-family: monospace;
+    padding: 20px;
+    text-align: left;
+}
+
+nav#navmenu{
+    height: 40px;
+    margin-bottom: 4px;
+    background-image: radial-gradient( rgb(221, 244, 242), rgb(222, 222, 217), rgb(228, 234, 228));
+
+}
+
+nav#navmenu > ul#ulmenu {
+    list-style-type: circle;
+    margin-top: 5px;
+}
+
+nav#navmenu > ul#ulmenu > li {
+    display: inline-block;
+    font-size: 1.1em;
+    border: 1px solid steelblue;
+    padding: 3px 10px 3px 3px;
+    font-weight: bold;
+}
+
+nav#navmenu > ul#ulmenu > li:hover{
+    background-color: beige;
+    color: blue;
+}
+
+div#divcolcontainer{
+    width: 100%;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3%;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: aliceblue;
+    }
+
+    header {
+      background-color: rgb(89, 111, 130);
+      color: aliceblue;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .promo-banner {
+      background: url(Images/Premium\ Vector\ _\ Special\ offer\ label\ icon\ in\ flat\ style\ Megaphone\ with\ discount\ vector\ illustration\ on\ isolated\ background\ Sale\ sign\ business\ concept.jpg) no-repeat center center/cover;
+      color: white;
+      padding: 80px 30px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 40px;
+    }
+
+    .promo-banner h2 {
+      font-size: 2em;
+      margin: 0 0 10px;
+    }
+
+    .promo-banner p {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    .promo-banner .btn {
+      background-color: white;
+      color: green;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .promo-banner .btn:hover {
+      background-color: white;
+    }
+
+    .promo-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .promo-card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .promo-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .promo-content {
+      padding: 20px;
+    }
+
+    .promo-content h3 {
+      margin: 0 0 10px;
+      color: green;
+    }
+
+    .promo-content p {
+      margin-bottom: 10px;
+      color: rgb(98, 95, 95);
+    }
+
+    .promo-content .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .promo-content .btn:hover {
+      background-color: green;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="divmaincontainer">
+
+        <header id="header" class="master">
+
+            <h1 id="sitetitle">Bloom Beverages</h1>
+
+        </header>
+
+        <nav id="navmenu" class="master">
+
+            <ul id="ulmenu">
+              <li> <a href="index.html">Home</a> </li>
+              <li> <a href="Menu.html">Menu</a> </li>
+              <li> <a href="Promotion.html">Promotion</a> </li>
+              <li> <a href="AboutUS.html">AboutUS</a> </li>
+              <li> <a href="Feedback.html">Feedback</a> </li>
+              <li> <a href="ContactUs.html">ContactUs</a> </li>
+            </ul>
+          </nav>
+
+            <div id="divcolcontainer">
+                <aside id="sidebar" class="columns">
+  <header>
+    <h1>LONG WEEKEND REFRESHMENT-BIG SAVINGS INSIDE!!!!</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="promo-banner">
+       
+      </div>
+
+    <div class="promo-cards">
+      <div class="promo-card">
+        <img src="Images/ArtStation - SODA CANS.jpg" alt="ArtStation">
+        <div class="promo-content">
+          <h3>Coca-Cola</h3>
+          <h3>Fanta</h3>
+          <h3>Sprite</h3>
+          <p>All three drinks for the price of 1</p>
+          <a href="ContactUs.html" class="button">Grab Deal</a>
+        </div>
+      </div>
+
+      <div class="promo-card">
+        <img src="Images/cfb0e4fe-c03e-430b-b6fb-e630b460fa58.jpg" alt="Prime">
+        <div class="promo-content">
+          <h3>Collective Primes</h3>
+          <p>Up to 30% off selected Prime bundles!</p>
+          <a href="ContactUs.html" class="button">Grab Deal</a>
+        </div>
+      </div>
+
+      <div class="promo-card">
+        <img src="Images/fanta.jpg" alt="Fanta">
+        <div class="promo-content">
+          <h3>Fanta promotion</h3>
+          <p>All kinds of fanta for the price of 1</p>
+          <a href="ContactUs.html" class="button">Get It</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

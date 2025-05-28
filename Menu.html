@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+               
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: aliceblue;
+}
+
+/* style the master page */
+
+/*define page size*/
+.master, .columns{
+    width: 100%;
+    border:1px solid turquoise;
+}
+
+div#divmaincontainer{
+    width: 100%;
+    margin: auto;
+}
+
+#header{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 4px;
+    border-radius: 10px 10px 0 0;
+
+    /* load the banner */
+    background-image: url('Images/Deep\ sea\ underwater\ bubbles.jpg'); /* path has to be relative to css .. go out of css folder once, then find the images folder*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+h1#sitetitle{
+    color: rgb(82, 141, 157);
+    font-size: 50px;
+    font-family: monospace;
+    padding: 20px;
+    text-align: left;
+}
+
+nav#navmenu{
+    height: 40px;
+    margin-bottom: 4px;
+    background-image: radial-gradient( rgb(221, 244, 242), rgb(222, 222, 217), rgb(228, 234, 228));
+
+}
+
+nav#navmenu > ul#ulmenu {
+    list-style-type:decimal;
+    margin-top: 5px;
+}
+
+nav#navmenu > ul#ulmenu > li {
+    display:inline-block;
+    font-size: 1.1em;
+    border: 1px solid steelblue;
+    padding: 3px 10px 3px 3px;
+    font-weight: bold;
+}
+
+nav#navmenu > ul#ulmenu > li:hover{
+    background-color: beige;
+    color: blue;
+}
+
+div#divcolcontainer{
+    width: 100%;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3%;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: aliceblue;
+    }
+
+    header {
+      background-color: rgb(70, 83, 96);
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+      margin-top: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .menu-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+
+    }
+
+    .menu-item {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      padding-top: 20px;
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+    }
+
+    .menu-content {
+      padding: 20px;
+    }
+
+    .menu-content h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: green;
+    }
+
+    .menu-content p {
+      margin: 0 0 10px;
+      color: grey;
+    }
+
+    .menu-content .price {
+      font-weight: bold;
+    }
+
+    .menu-content .buy-button{
+      margin-top: auto;
+      background-color: rgb(42, 87, 72);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      text-align: center;
+      }
+
+      .menu content .buy-button:hover{
+      background-color: aqua;
+      }
+    </style>
+
+</head>
+<body>
+
+    <div id="divmaincontainer">
+
+        <header id="header" class="master">
+
+            <h1 id="sitetitle">Bloom Beverages</h1>
+
+        </header>
+
+        <nav id="navmenu" class="master">
+
+            <ul id="ulmenu">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="Menu.html">Menu</a> </li>
+                <li> <a href="Promotion.html">Promotion</a> </li>
+                <li> <a href="AboutUS.html">AboutUS</a> </li>
+                <li> <a href="Feedback.html">Feedback</a> </li>
+                <li> <a href="ContactUs.html">ContactUs</a> </li>
+                </ul>
+                </nav>
+
+  <header>
+    <h1>Our Refreshing Drinks</h1>
+    <p>Available Now!!</p>
+  </header>
+
+  <div id="divcolcontainer">
+    <aside id="sidebar" class="columns">
+  <div class="menu-container">
+    <div class="menu-grid">
+
+      <div class="menu-item">
+        <img src="Images/d34b3e19-e9d0-4389-8e89-71fab75a1644.jpg" alt="Sprite">
+        <div class="menu-content">
+          <h3>Sprite</h3>
+          <p>Lemonade favoured</p>
+          <p>330ml</p>
+          <p class="price">P9.00</p>
+          <a href="ContactUs.html">
+          <button class="buy-button">Buy Now</button>
+        </a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="Images/CocaCola.JPG" alt="Coca-Cola">
+        <div class="menu-content">
+          <h3>Coca-Cola</h3>
+          <p>Original coke</p>
+          <p>330ml</p>
+          <p class="price">P10.00</p>
+          <a href="ContactUs.html">
+          <button class="buy-button">Buy Now</button>
+        </a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="Images/Prime.JPG" alt="Prime">
+        <div class="menu-content">
+          <h3>Prime</h3>
+          <p>Bubblegum flavour</p>
+          <p>350ml</p>
+          <p class="price">P19.00</p>
+          <a href="ContactUs.html">
+           <button class="buy-button">Buy Now</button>
+        </a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="Images/Fanta Products.jpg" alt="Fanta">
+        <div class="menu-content">
+          <h3>Fanta</h3>
+          <h3>Strawberry flavoured</h3>
+          <p>330ml</p>
+          <p class="price">P10.00</p>
+          <a href="ContactUs.html">
+          <button class="buy-button">Buy Now</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="Images/Pepsi.JPG" alt="Pepsi">
+        <div class="menu-content">
+          <h3>Pepsi</h3>
+          <p>Original flavour</p>
+          <p>330ml</p>
+          <p class="price">P8.00</p>
+          <a href="ContactUs.html">
+           <button class="buy-button">Buy Now</button>
+        </a>
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+  
+    
+</body>
+</html>
